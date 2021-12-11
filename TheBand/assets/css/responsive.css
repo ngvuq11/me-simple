@@ -1,0 +1,73 @@
+/* PC */
+@media (min-width: 1024px) {}
+
+/* Tabel */
+@media (min-width: 740px) and (max-width: 1024) {}
+
+/* Mobile */
+@media (max-width: 740px) {
+  #heading {
+    overflow: hidden;
+    display: block;
+
+  }
+
+  .nav>li:first-child {
+    display: inline-block;
+  }
+
+  .nav {
+    display: block;
+    position: relative;
+  }
+
+  .nav .nav-item {
+    display: block;
+  }
+
+  .nav .nav-item:hover .sub-nav {
+    position: initial;
+  }
+
+  .sub-nav {
+    background: #333;
+  }
+
+  .sub-nav .sub-link {
+    padding: 12px 40px;
+    color: #fff;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .member-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .tickets {
+    display: block;
+  }
+
+  .ticket {
+    margin-top: 20px;
+  }
+
+  .contact-container {
+    display: block;
+  }
+
+  .input-top {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

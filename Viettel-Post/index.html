@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viettel Post - clone by ngvuq</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="header_top">
+                <div class="container header-container">
+                    <div class="header-contact">
+                        <span>
+                            <ion-icon name="person-outline"></ion-icon>
+                            Hotline: 1900 8095
+                        </span>
+                        <span>8:00 - 20:00, Thứ 2 - Chủ Nhật</span>
+                    </div>
+                    <div class="header-login">
+                        <div class="login">
+                            <ion-icon name="person-outline"></ion-icon> Đăng nhập / Đăng xuất
+                        </div>
+                        <div class="language-choice">
+                            <select name="language1" id="language1">
+                                <option value="vie" selected="selected">Tiếng Việt</option>
+                                <option value="eng">Tiếng Anh</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom js-header">
+                <div class="container header-bottom-container">
+                    <a href="#" class="header-logo">
+                        <img src="./assets/img/logo-01.png" alt="Không thể hiển thị logo">
+                    </a>
+                    <ul class="header-nav">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Trang chủ
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Dịch vụ<ion-icon name="chevron-down-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Tin tức<ion-icon name="chevron-down-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Quan hệ cổ đông<ion-icon name="chevron-down-outline"></ion-icon></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Tuyển dụng<ion-icon name="chevron-down-outline"></ion-icon></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Liên hệ <ion-icon name="chevron-down-outline"></ion-icon></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                Hợp tác<ion-icon name="chevron-down-outline"></ion-icon></a>
+                        </li>
+                        <li class="search-btn">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="swiper mySwiperBanner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/img/banner-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/banner1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/banner-15.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./assets/img/banner2.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="tracking flex">
+                    <div class="tracking-item">
+                        <h2>
+                            <ion-icon name="car-outline"></ion-icon>
+                            Theo dõi vận đơn
+                        </h2>
+                        <img src="./assets/img/tc.png" alt="Không thể hiển thị hình ảnh">
+                        <button><span>TRA CỨU</span></button>
+                    </div>
+                    <div class="tracking-item">
+                        <h2>
+                            <ion-icon name="calculator-outline"></ion-icon>
+                            Ước tính chi phí
+                        </h2>
+                        <div class="tracking-from">
+                            <span>Gửi từ *</span>
+                            <select name="select-from" id="">
+                                <option value="" disabled selected>Chọn tỉnh thành</option>
+                                <option value="">Đà Nẵng</option>
+                                <option value="">Sài Gòn</option>
+                                <option value="">Hà Nội</option>
+                            </select>
+                        </div>
+                        <div class="tracking-to">
+
+                        </div>
+                        <button><span>TRA CỨU</span></button>
+                    </div>
+                    <div class="tracking-item">
+                        <h2>
+                            <ion-icon name="compass-outline"></ion-icon>
+                            Tìm kiếm bưu cục
+                        </h2>
+                        <img src="./assets/img/maps.png" alt="">
+                        <button><span>TÌM KIẾM</span></button>
+                    </div>
+                </div>
+                <a href="#croll-services" class="btn-goto">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </a>
+            </div>
+        </div>
+        <div class="services" id="croll-services">
+            <div class="container">
+                <h2>Dịch vụ nổi bật</h2>
+                <div class="services-container">
+                    <a class="service">
+                        <div class="service-icon">
+                            <ion-icon name="airplane-outline"></ion-icon>
+                        </div>
+                        <div class="service-sub">
+                            <span>NHANH - AN TOÀN - CHÍNH XÁC</span>
+                        </div>
+                        <div class="service-title">
+                            <span>Chuyển phát nhanh</span>
+                        </div>
+                        <div class="service-code">
+                            <span>VCN</span>
+                            <span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </div>
+                    </a>
+                    <a class="service">
+                        <div class="service-icon">
+                            <ion-icon name="airplane-outline"></ion-icon>
+                        </div>
+                        <div class="service-sub">
+                            <span>NHANH - AN TOÀN - CHÍNH XÁC</span>
+                        </div>
+                        <div class="service-title">
+                            <span>Chuyển phát nhanh</span>
+                        </div>
+                        <div class="service-code">
+                            <span>VCN</span>
+                            <span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </div>
+                    </a>
+                    <a class="service">
+                        <div class="service-icon">
+                            <ion-icon name="airplane-outline"></ion-icon>
+                        </div>
+                        <div class="service-sub">
+                            <span>NHANH - AN TOÀN - CHÍNH XÁC</span>
+                        </div>
+                        <div class="service-title">
+                            <span>Chuyển phát nhanh</span>
+                        </div>
+                        <div class="service-code">
+                            <span>VCN</span>
+                            <span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <button class="btn-all-servive"><span>TẤT CẢ DỊCH VỤ</span>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+        <div class="networks">
+            <div class="container flex">
+                <div class="grid-left">
+                    <div class="left-content">
+                        <h2>Mạng lưới bưu cục trên 63 tỉnh thành</h2>
+                        <hr>
+                        <span class="text-bold">Mạng lưới chuyển phát của Viettel Post</span><span> phủ sóng khắp
+                            63 tỉnh thành
+                            trên
+                            lãnh thổ Việt Nam.</span>
+                    </div>
+                </div>
+                <div class="grid-right flex">
+                    <div class="grid-right-header">
+                        <div class="right-counter">
+                            <div class="right-counter-top">
+                                <ion-icon name="person-outline"></ion-icon>328.633
+                            </div>
+                            <div class="right-counter-bottom">
+                                KHÁCH HÀNG TIN DÙNG
+                            </div>
+                        </div>
+                        <div class="right-counter">
+                            <div class="right-counter-top">
+                                <ion-icon name="newspaper-outline"></ion-icon>521.319
+                            </div>
+                            <div class="right-counter-bottom">
+                                ĐƠN HÀNG ĐANG VẬN CHUYỂN
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/img/local.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="story-section">
+            <div class="container">
+                <div class="story">
+                    <h2>CÂU CHUYỆN THÀNH CÔNG</h2>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span class="">Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span>Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span>Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span>Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span>Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span>Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span>Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span>Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis deleniti
+                                    sint
+                                    nemo, voluptate aspernatur hic. Possimus, suscipit delectus reprehenderit quibusdam
+                                    repellat quod minima dignissimos ad dolore, similique iure dolor!</p>
+                                <span>Nguyễn Vũ Quốc - Đà Nẵng</span>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="scroll-top" onclick="topFunction()" id="btn-scroll-top">
+            <ion-icon name="triangle-outline"></ion-icon>
+        </button>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+#checkbox-mobile-nav:checked~.nav-list {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#checkbox-mobile-nav:checked~.bgrview {
+  display: block;
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+
+  .nav-list {
+    display: block;
+    transform: translateX(-100%);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 40%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #e84393;
+    opacity: 0;
+    transition: transfrom .5s ease-in-out;
+  }
+
+  .mobile-nav-back {
+    display: block;
+  }
+
+  .nav-link {
+    display: block;
+    font-size: 2.2rem;
+    color: #e84393;
+    padding: 10px 40px;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .moblie-nav {
+    display: block;
+    color: #e84393;
+  }
+
+  .nav-link:active .nav-list {
+    display: none;
+  }
+
+  .about-video {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .row {
+    width: 90%;
+    gap: 15px;
+  }
+
+  .columns {
+    text-align: center;
+  }
+
+  .pay-slider {
+    grid-template-columns: unset;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+  }
+
+  .pay-items {
+    width: 100%;
+    scroll-snap-align: start;
+  }
+
+  .products {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+
+  .product-btn {
+    bottom: 150px;
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 5px 0;
+  }
+}

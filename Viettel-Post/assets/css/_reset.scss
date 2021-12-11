@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a,
+button {
+    cursor: pointer;
+}
+html,
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 62.5%;
+    scroll-padding-top: 8rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.f-ct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+#warpper {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}

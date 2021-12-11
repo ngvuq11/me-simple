@@ -1,0 +1,10 @@
+@mixin flex($value: "ct") {
+    display: flex;
+    align-items: center;
+    @if $value == "ct" {
+        justify-content: center;
+    }
+    @if $value == "sb" {
+        justify-content: space-between;
+    }
+}

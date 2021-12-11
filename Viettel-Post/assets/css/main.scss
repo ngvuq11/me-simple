@@ -1,0 +1,40 @@
+@import "mixin";
+@import "reset";
+@import "header";
+@import "tracking";
+@import "services";
+@import "networks";
+@import "stories";
+
+.banner {
+    .swiper {
+        width: 100%;
+        &-wrapper {
+            width: 100%;
+        }
+        &-slide {
+            width: 100%;
+            > img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.scroll-top {
+    display: none;
+    position: fixed;
+    border: none;
+    background: transparent;
+    z-index: 99;
+    right: 3rem;
+    bottom: 3rem;
+    border-radius: 100rem;
+    ion-icon {
+        font-size: 5rem;
+        color: #000;
+    }
+    &:hover ion-icon {
+        color: #ee0033;
+    }
+}

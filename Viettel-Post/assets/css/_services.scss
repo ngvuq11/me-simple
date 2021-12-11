@@ -1,0 +1,103 @@
+.services {
+    padding: 5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    h2 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    &-container {
+        @include flex("sb");
+        margin-top: 3rem;
+        .service {
+            cursor: pointer;
+            position: relative;
+            width: calc(100% / 4);
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            padding: 4rem 1.5rem;
+            border-radius: 1rem;
+            &-icon {
+                margin-bottom: 3rem;
+                ion-icon {
+                    font-size: 5rem;
+                }
+            }
+            &-sub {
+                margin-bottom: 2rem;
+                background-color: #fde5ea;
+                border-radius: 5rem;
+                color: #e6758b;
+                font-size: 1.5rem;
+            }
+            &-title {
+                font-size: 2rem;
+                margin-bottom: 4rem;
+            }
+            &-code {
+                @include flex("ct");
+                flex-direction: column;
+                font-size: 2rem;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 0;
+                background-color: #ff5f13;
+                border-radius: 1rem;
+                z-index: -1;
+                transition: height 0.25s linear;
+            }
+            &:hover::before {
+                height: 100%;
+            }
+        }
+    }
+    .btn-all-servive {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin: 0 auto;
+        border: none;
+        background-color: #ff5f13;
+        color: #fff;
+        padding: 1rem 3rem;
+        margin-top: 3rem;
+        font-size: 1.8rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 9;
+        border-radius: 1rem;
+        margin-bottom: 5rem;
+        > ion-icon {
+            margin-left: 3rem;
+            font-size: 2.5rem;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            transition: all 0.4s linear;
+            background-color: red;
+            z-index: -1;
+            border-radius: 1rem;
+        }
+        &:hover {
+            &::before {
+                width: 100%;
+            }
+            span,
+            ion-icon {
+                color: #000;
+            }
+        }
+    }
+}

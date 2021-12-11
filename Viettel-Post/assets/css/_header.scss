@@ -1,0 +1,100 @@
+.header {
+    &_top {
+        width: 100%;
+        background-color: #44494d;
+    }
+    .header-container {
+        @include flex("sb");
+    }
+    &-contact {
+        @include flex("ct");
+    }
+    &-contact span {
+        font-size: 1.2rem;
+        color: #fff;
+        font-weight: 100;
+        &:first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:first-child ion-icon {
+            margin-right: 1rem;
+        }
+        &:last-child {
+            margin-left: 1.5rem;
+        }
+    }
+    &-login {
+        @include flex("ct");
+        .login {
+            @include flex("ct");
+            font-size: 1.3rem;
+            background-color: rgb(223, 55, 55);
+            padding: 1.5rem 2rem;
+            color: #fff;
+            ion-icon {
+                margin-right: 1rem;
+            }
+            &:hover {
+                color: #ccc;
+                background-color: rgb(255, 10, 10);
+            }
+        }
+        .language-choice select {
+            border: none;
+            outline: none;
+            margin-left: 1rem;
+            background-color: #44494d;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            font-size: 1.3rem;
+        }
+    }
+    &-bottom {
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        &-container {
+            @include flex("sb");
+        }
+        .header-logo {
+            display: block;
+            padding: 2rem 0;
+        }
+        .header-nav {
+            @include flex("ct");
+            list-style: none;
+            font-size: 1.5rem;
+            .nav-link {
+                @include flex("ct");
+                color: #000;
+                padding: 0 1rem;
+                text-decoration: none;
+                transition: all 0.25 linear;
+                ion-icon {
+                    margin-left: 0.5rem;
+                }
+                &:hover {
+                    color: red;
+                }
+            }
+            .search-btn {
+                @include flex("ct");
+                ion-icon {
+                    font-size: 1.8rem;
+                    padding: 1rem;
+                }
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+    &-bottom.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+    }
+}
